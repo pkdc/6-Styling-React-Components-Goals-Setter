@@ -57,6 +57,8 @@ const CourseInput = (props) => {
     <form onSubmit={formSubmitHandler}>
       {/* <FormControl className={!isValid && "invalid"}> */}
       <div
+      // the outer {} is coz it's using JS exp in JSX
+      // the inner ${} is coz it is using JS exp in template literal
         className={`${styles["form-control"]} ${!isValid && styles.invalid}`}
       >
         <label>Course Goal</label>
